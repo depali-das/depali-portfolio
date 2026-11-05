@@ -57,6 +57,6 @@ npm run dev
 📬 Connect With Me
 GitHub: https://github.com/depali-das
 LinkedIn: https://linkedin.com/in/depali-das
-Email: Add your email here
+Email: depali764@gmail.com
 ⭐ Thank you for visiting my portfolio! Feel free to explore and connect.
 
