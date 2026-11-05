@@ -1,0 +1,14 @@
+@keyframes note-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes nudge-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
+@keyframes particle-float {
+  from { opacity: 0.2; transform: translate3d(0, 0, 0); }
+  to { opacity: 0.8; transform: translate3d(8px, -18px, 0); }
+}

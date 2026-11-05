@@ -1,0 +1,31 @@
+.score-footer span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #a3d0b1;
+}
+
+.site-footer {
+  display: flex;
+  min-height: 82px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 max(56px, calc((100% - 1312px) / 2));
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  color: #77717f;
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.08em;
+}
+
+.site-footer > a:last-of-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #aca2b5;
+}
+
+.footer-copy {
+  display: none;
+}

@@ -1,0 +1,17 @@
+.journey-inner {
+  padding-top: 102px;
+  padding-bottom: 105px;
+}
+
+.journey-footnote {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 25px;
+  color: #938b9c;
+  font-size: 10px;
+}
+
+.journey-footnote svg {
+  color: #bd9cdd;
+}

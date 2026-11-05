@@ -1,0 +1,221 @@
+.about-section {
+  padding-top: 130px;
+  padding-bottom: 142px;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.72fr) minmax(0, 1.28fr);
+  align-items: start;
+  gap: clamp(36px, 7vw, 92px);
+  margin-top: 58px;
+}
+
+.about-profile {
+  position: sticky;
+  top: 110px;
+  padding: 11px;
+  border: 1px solid rgba(201, 168, 231, 0.16);
+  border-radius: 12px;
+  background: linear-gradient(145deg, rgba(39, 29, 52, 0.72), rgba(17, 15, 23, 0.86));
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.18);
+}
+
+.about-photo-frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 0.86;
+  border-radius: 7px;
+  background: #d7d4d5;
+}
+
+.about-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 19%;
+  transition: transform 650ms cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+
+.about-profile:hover .about-photo-frame img {
+  transform: scale(1.035);
+}
+
+.about-photo-glow {
+  position: absolute;
+  inset: 45% 0 0;
+  background: linear-gradient(transparent, rgba(13, 10, 17, 0.5));
+  pointer-events: none;
+}
+
+.about-profile-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px 5px 5px;
+}
+
+.about-profile-caption > div,
+.about-location {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about-profile-caption strong {
+  color: #f0eaf6;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.about-profile-caption > div > span {
+  color: #968e9f;
+  font-size: 10px;
+}
+
+.about-location {
+  flex-direction: row;
+  align-items: center;
+  color: #c5a5e5;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.about-copy {
+  max-width: 650px;
+}
+
+.about-copy p {
+  color: #9c97a4;
+  font-size: 13px;
+  line-height: 1.95;
+}
+
+.about-copy .lead-copy {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #e0dbe5;
+  font-family: var(--serif);
+  font-size: 23px;
+  line-height: 1.55;
+}
+
+.about-education {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 27px;
+  padding: 19px 20px;
+  border: 1px solid rgba(194, 153, 235, 0.18);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(34, 27, 44, 0.72), rgba(20, 17, 26, 0.48));
+}
+
+.about-education-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 4px;
+  color: #c19be5;
+}
+
+.about-education-heading span {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+}
+
+.about-education > strong {
+  color: #eee8f3;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.about-education > span {
+  color: #9c97a4;
+  font-size: 11px;
+}
+
+.education-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.education-facts span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 4px;
+  color: #aaa3b4;
+  font-size: 10px;
+}
+
+.education-facts strong {
+  color: #e1c8f6;
+  font-weight: 500;
+}
+
+.about-goal {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 15px 16px;
+  border-left: 2px solid rgba(190, 148, 248, 0.65);
+  background: rgba(165, 119, 205, 0.055);
+}
+
+.about-goal-icon {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(176, 127, 224, 0.14);
+  color: #d5b3fa;
+}
+
+.about-goal p {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.75;
+}
+
+.about-goal p strong {
+  color: #e4d8f0;
+  font-weight: 500;
+}
+
+.about-goal p span {
+  color: #9c95a4;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 17px;
+  color: #d2b1f1;
+  font-size: 11px;
+}
+
+.text-link svg,
+.source-link svg,
+.contact-profile svg {
+  transition: transform 180ms ease;
+}
+
+.text-link:hover svg,
+.source-link:hover svg:last-child,
+.contact-profile:hover svg {
+  transform: translate(2px, -2px);
+}

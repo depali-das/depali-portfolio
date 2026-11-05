@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icons/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/depali-optimized.jpg"
+      fetchpriority="high"
+    />
+    <link
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500&display=swap"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500&display=swap"
+      />
+    </noscript>
+    <meta
+      name="description"
+      content="Depali Das is an aspiring frontend developer creating beautiful, responsive and user-friendly websites."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#09080d" />
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem('dipali-portfolio-theme');
+          const theme = savedTheme === 'light' || savedTheme === 'dark'
+            ? savedTheme
+            : window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light'
+              : 'dark';
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+          document.querySelector('meta[name="theme-color"]')
+            ?.setAttribute('content', theme === 'dark' ? '#09080d' : '#f7f5fa');
+        } catch {
+          const theme = window.matchMedia('(prefers-color-scheme: light)').matches
+            ? 'light'
+            : 'dark';
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+          document.querySelector('meta[name="theme-color"]')
+            ?.setAttribute('content', theme === 'dark' ? '#09080d' : '#f7f5fa');
+        }
+      })();
+    </script>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Depali Das — Aspiring Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Explore Depali Das's frontend projects, skills, and professional profile."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Depali Das — Aspiring Frontend Developer" />
+    <meta
+      name="twitter:description"
+      content="Explore Depali Das's frontend projects, skills, and professional profile."
+    />
+    <title>Depali Das — Aspiring Frontend Developer</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Depali Das",
+        "jobTitle": "Aspiring Frontend Developer",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Brainware University"
+        },
+        "sameAs": [
+          "https://github.com/depali-das",
+          "https://www.linkedin.com/in/depali-das"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

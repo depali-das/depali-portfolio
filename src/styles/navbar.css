@@ -1,0 +1,89 @@
+.site-header {
+  position: absolute;
+  z-index: 20;
+  inset: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100% - 112px, 1312px);
+  height: 92px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: #f8f6fa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+}
+
+.wordmark-mark {
+  display: grid;
+  width: 31px;
+  height: 31px;
+  place-items: center;
+  border: 1px solid rgba(198, 155, 255, 0.58);
+  border-radius: 50%;
+  color: #d3b2ff;
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.wordmark-period {
+  color: #bd8cff;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 3.2vw, 46px);
+}
+
+.main-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #b7b2c0;
+  font-size: 11px;
+  letter-spacing: 0.035em;
+  transition: color 180ms ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  color: #fff;
+}
+
+.main-nav .nav-cta {
+  padding: 10px 15px;
+  border: 1px solid rgba(190, 148, 248, 0.43);
+  border-radius: 3px;
+  color: #eee5fa;
+}
+
+.main-nav .nav-cta:hover {
+  border-color: #c59aff;
+  color: #fff;
+}
+
+.menu-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-wordmark {
+  font-family: var(--sans);
+}

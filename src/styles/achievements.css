@@ -1,0 +1,73 @@
+.section-heading h2,
+.achievement-panel h2,
+.contact-content h2 {
+  margin: 23px 0 0;
+  color: #f1edf5;
+  font-family: var(--serif);
+  font-size: clamp(42px, 6vw, 70px);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.section-heading h2 span,
+.achievement-panel h2 span,
+.contact-content h2 span {
+  color: #ac8acb;
+}
+
+.achievements-section {
+  padding-top: 102px;
+  padding-bottom: 108px;
+}
+
+.achievement-panel {
+  display: flex;
+  min-height: 245px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 38px 55px;
+  border: 1px solid rgba(194, 158, 228, 0.22);
+  background:
+    radial-gradient(ellipse at 85% 50%, rgba(156, 108, 203, 0.18), transparent 35%),
+    linear-gradient(120deg, #15121b, #110e16);
+}
+
+.achievement-panel h2 {
+  font-size: clamp(35px, 4.5vw, 53px);
+}
+
+.achievement-score {
+  display: flex;
+  min-width: 170px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.achievement-score > span:first-child {
+  color: #9b8aaa;
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.13em;
+}
+
+.achievement-score strong {
+  margin: 6px 0;
+  color: #dfc5f8;
+  font-family: var(--serif);
+  font-size: 70px;
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.achievement-score .score-footer {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #9e95a8;
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
