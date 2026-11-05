@@ -32,7 +32,7 @@ I enjoy learning new technologies and creating creative web experiences using Re
 I am currently looking for remote Junior Frontend Developer opportunities where I can improve my skills and contribute to real-world projects.
 
 🌐 Live Portfolio
-Live Site: Add your deployed portfolio URL here (e.g., https://depali-das.vercel.app)
+Live Site: https://depali-portfolio.netlify.app
 
 💻 Featured Projects
 1. EasyBazar – Fresh Daily
