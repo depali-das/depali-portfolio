@@ -1,16 +1,17 @@
-import { motion } from 'framer-motion'
 import useScrollAnimation from '../../hooks/useScrollAnimation'
 
 function ScrollReveal({ children, className = '', delay = 0 }) {
-  const animation = useScrollAnimation(delay)
+  const { ref, isVisible } = useScrollAnimation(delay)
 
   return (
-    <motion.div
-      className={className}
-      {...animation}
+    <div
+      ref={ref}
+      className={`scroll-reveal${className ? ` ${className}` : ''}`}
+      data-revealed={isVisible}
+      style={{ '--reveal-delay': `${delay}s` }}
     >
       {children}
-    </motion.div>
+    </div>
   )
 }
 

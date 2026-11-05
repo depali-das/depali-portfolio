@@ -29,10 +29,12 @@
   transition:
     border-color 200ms ease,
     background 200ms ease,
-    box-shadow 200ms ease;
+    box-shadow 200ms ease,
+    translate 200ms ease;
 }
 
 .skill-cell:hover {
+  translate: 0 -5px;
   border-color: rgba(198, 160, 237, 0.43);
   background:
     radial-gradient(ellipse at 100% 0, rgba(158, 111, 201, 0.16), transparent 56%),

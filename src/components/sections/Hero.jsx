@@ -1,4 +1,3 @@
-import { useRef } from 'react'
 import { ArrowDown, Atom, Code2, Download, Wind } from 'lucide-react'
 import Button from '../common/Button'
 import BackgroundGlow from '../effects/BackgroundGlow'
@@ -17,7 +16,6 @@ const technologyCards = [
 ]
 
 function Hero() {
-  const heroRef = useRef(null)
   const nameParts = personal.name.split(' ')
 
   return (
@@ -25,9 +23,8 @@ function Hero() {
       aria-labelledby="hero-heading"
       className="hero-section"
       id="home"
-      ref={heroRef}
     >
-      <BackgroundGlow targetRef={heroRef} />
+      <BackgroundGlow />
       <FloatingParticles />
       <div className="hero-grid">
         <div className="hero-copy">
@@ -118,7 +115,7 @@ function Hero() {
 
         <div className="hero-visual">
           <div className="portrait-halo" />
-          <MouseParallax className="portrait-frame" intensity={5}>
+          <MouseParallax className="portrait-frame">
             <img
               src={personal.portrait}
               srcSet="/images/depali-400.jpg 400w, /images/depali-optimized.jpg 640w"

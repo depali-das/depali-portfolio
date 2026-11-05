@@ -1,20 +1,14 @@
-import { motion, useReducedMotion } from 'framer-motion'
+import useScrollAnimation from '../../hooks/useScrollAnimation'
 
 function SkillCard({ skill, index, Icon }) {
-  const reduceMotion = useReducedMotion()
+  const { ref, isVisible, delay } = useScrollAnimation((index % 4) * 0.07)
 
   return (
-    <motion.article
-      className="skill-cell"
-      initial={reduceMotion ? false : { opacity: 0, y: 18 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.25 }}
-      transition={{
-        duration: reduceMotion ? 0 : 0.55,
-        delay: reduceMotion ? 0 : (index % 4) * 0.07,
-        ease: [0.22, 1, 0.36, 1],
-      }}
-      whileHover={reduceMotion ? undefined : { y: -5 }}
+    <article
+      ref={ref}
+      className="skill-cell scroll-reveal"
+      data-revealed={isVisible}
+      style={{ '--reveal-delay': `${delay}s` }}
     >
       <span className="skill-number">{String(index + 1).padStart(2, '0')}</span>
       <span className={`skill-icon skill-icon-${skill.icon}`} aria-hidden="true">
@@ -23,7 +17,7 @@ function SkillCard({ skill, index, Icon }) {
       <span className="skill-name">{skill.name}</span>
       <span className="skill-category">{skill.category}</span>
       <span className="skill-accent" aria-hidden="true" />
-    </motion.article>
+    </article>
   )
 }
 
