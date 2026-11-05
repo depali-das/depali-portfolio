@@ -1,0 +1,17 @@
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=2592000, must-revalidate
+
+/icons/*
+  Cache-Control: public, max-age=2592000, must-revalidate
+
+/icons.svg
+  Cache-Control: public, max-age=2592000, must-revalidate
+
+/favicon.svg
+  Cache-Control: public, max-age=2592000, must-revalidate
+
+/Dipali-Das-CV.pdf
+  Cache-Control: public, max-age=2592000, must-revalidate
