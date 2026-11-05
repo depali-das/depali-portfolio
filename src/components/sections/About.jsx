@@ -21,6 +21,8 @@ function About() {
           <div className="about-photo-frame">
             <img
               src={personal.portrait}
+              srcSet="/images/depali-400.jpg 400w, /images/depali-optimized.jpg 640w"
+              sizes="(max-width: 640px) 360px, (max-width: 1023px) 320px, 350px"
               alt={`${personal.name}, frontend developer`}
               width="640"
               height="877"

@@ -121,6 +121,8 @@ function Hero() {
           <MouseParallax className="portrait-frame" intensity={5}>
             <img
               src={personal.portrait}
+              srcSet="/images/depali-400.jpg 400w, /images/depali-optimized.jpg 640w"
+              sizes="(max-width: 640px) 360px, (max-width: 1023px) 320px, 350px"
               alt={`${personal.name} smiling in a white shirt`}
               width="640"
               height="877"
