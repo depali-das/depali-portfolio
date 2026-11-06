@@ -214,6 +214,7 @@ body,
 }
 
 :root[data-theme='light'] .section-heading h2 span,
+:root[data-theme='light'] .achievement-panel h2 span,
 :root[data-theme='light'] .contact-content h2 span {
   color: #704d9a;
 }
