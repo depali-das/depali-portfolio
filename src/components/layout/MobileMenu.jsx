@@ -1,7 +1,7 @@
 import { ArrowUpRight, Download } from 'lucide-react'
 import ThemeToggle from './ThemeToggle'
 
-function MobileMenu({ navigation, isOpen, onNavigate, theme, onThemeToggle }) {
+function MobileMenu({ navigation, isOpen, onNavigate, onThemeToggle }) {
   return (
     <nav
       id="primary-navigation"
@@ -24,7 +24,7 @@ function MobileMenu({ navigation, isOpen, onNavigate, theme, onThemeToggle }) {
       >
         Download CV <Download size={15} aria-hidden="true" />
       </a>
-      <ThemeToggle theme={theme} onToggle={onThemeToggle} />
+      <ThemeToggle onToggle={onThemeToggle} />
     </nav>
   )
 }

@@ -74,6 +74,26 @@ body,
   transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
 }
 
+.theme-toggle-dark-icon,
+.theme-toggle-dark-label {
+  display: none;
+}
+
+.theme-toggle-light-icon,
+.theme-toggle-light-label {
+  display: initial;
+}
+
+:root[data-theme='light'] .theme-toggle-light-icon,
+:root[data-theme='light'] .theme-toggle-light-label {
+  display: none;
+}
+
+:root[data-theme='light'] .theme-toggle-dark-icon,
+:root[data-theme='light'] .theme-toggle-dark-label {
+  display: initial;
+}
+
 .theme-toggle:hover {
   border-color: var(--accent);
   background: rgba(176, 127, 224, 0.1);

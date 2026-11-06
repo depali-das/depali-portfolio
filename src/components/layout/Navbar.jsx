@@ -4,7 +4,7 @@ import { navigation } from '../../data/navigation'
 import { personal } from '../../data/personal'
 import MobileMenu from './MobileMenu'
 
-function Navbar({ theme, onThemeToggle }) {
+function Navbar({ onThemeToggle }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const menuToggleRef = useRef(null)
   const closeMenu = () => {
@@ -65,7 +65,6 @@ function Navbar({ theme, onThemeToggle }) {
         navigation={navigation}
         isOpen={menuOpen}
         onNavigate={closeMenu}
-        theme={theme}
         onThemeToggle={onThemeToggle}
       />
     </header>

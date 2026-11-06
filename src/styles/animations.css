@@ -24,3 +24,15 @@
   opacity: 0;
   transform: translateY(28px);
 }
+
+.no-js .scroll-reveal[data-revealed='false'] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal[data-revealed='false'] {
+    opacity: 1;
+    transform: none;
+  }
+}

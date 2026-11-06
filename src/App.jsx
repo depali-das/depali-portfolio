@@ -14,6 +14,8 @@ import NotFound from './components/common/NotFound'
 import './App.css'
 
 function getInitialTheme() {
+  if (typeof window === 'undefined') return 'dark'
+
   try {
     const savedTheme = window.localStorage.getItem('dipali-portfolio-theme')
     if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme
@@ -28,7 +30,9 @@ function getInitialTheme() {
 
 function App() {
   const [theme, setTheme] = useState(getInitialTheme)
-  const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html'
+  const isHomePage = typeof window === 'undefined' ||
+    window.location.pathname === '/' ||
+    window.location.pathname === '/index.html'
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme
@@ -51,7 +55,6 @@ function App() {
     <div className="site-shell">
       <a className="skip-link" href="#main-content">Skip to main content</a>
       <Navbar
-        theme={theme}
         onThemeToggle={() => setTheme((current) => current === 'dark' ? 'light' : 'dark')}
       />
       <main id="main-content" tabIndex="-1">
